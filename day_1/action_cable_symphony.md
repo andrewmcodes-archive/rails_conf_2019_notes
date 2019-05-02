@@ -1,11 +1,16 @@
 # The Action Cable Symphony - An Illustrated Musical Adventure
 
 - [The Action Cable Symphony - An Illustrated Musical Adventure](#the-action-cable-symphony---an-illustrated-musical-adventure)
-	- [Notes](#notes)
-		- [Server](#server)
-		- [Clients](#clients)
-		- [Security](#security)
-		- [Latency](#latency)
+  - [Video](#video)
+  - [Notes](#notes)
+    - [Server](#server)
+    - [Clients](#clients)
+    - [Security](#security)
+    - [Latency](#latency)
+
+## Video
+
+https://www.youtube.com/watch?v=x3b9KlzjJNM
 
 ## Notes
 

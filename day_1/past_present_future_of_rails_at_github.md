@@ -1,6 +1,27 @@
 # The Past, Present, and Future of Rails at GitHub by Eileen Uchitelle
 
-## General Notes
+- [The Past, Present, and Future of Rails at GitHub by Eileen Uchitelle](#the-past-present-and-future-of-rails-at-github-by-eileen-uchitelle)
+  - [Slides](#slides)
+  - [Notes](#notes)
+    - [General](#general)
+    - [GitHub's Issues](#githubs-issues)
+    - [Costs for you](#costs-for-you)
+    - [When upgrading you should...](#when-upgrading-you-should)
+    - [Regrets](#regrets)
+    - [Things to remember](#things-to-remember)
+    - [Benefits](#benefits)
+    - [Future for GitHub](#future-for-github)
+    - [Multiple Rails Versions](#multiple-rails-versions)
+      - [Gemfile](#gemfile)
+      - [Features](#features)
+
+## Slides
+
+https://speakerdeck.com/eileencodes/railsconf-2019-the-past-present-and-future-of-rails-at-github
+
+## Notes
+
+### General
 
 - Rails is born in 2004
 - "Frameworks are extracted, not built" -DHH
@@ -25,14 +46,14 @@
 - Cost of not upgrading is immeasurable and will cost more money because of tech debt
 - Key to upgrading is incrementally shave off technical debt
 
-## GitHub's Issues
+### GitHub's Issues
 
 - Hiring issues
 - Security backports
 - Dependencies were brittle
 - Development was painful
 
-## Costs for you
+### Costs for you
 
 - Have to manually update security backports
 - You loose out on new talent from college and bootcamps
@@ -41,7 +62,7 @@
 - Minor changes can lead to major refactoring
 - Biggest cost is that someday you will realize Rails is a mistake (and rewrite in microservices)
 
-## When upgrading you should...
+### When upgrading you should...
 
 - Build a team for the upgrade
 - Consider hiring a contractor for a small team
@@ -50,7 +71,7 @@
 - Fix deprecation warnings early
 - Invest in tooling
 
-## Regrets
+### Regrets
 
 - You may regret forking Rails
   - Single most expensive decision for GitHub
@@ -60,7 +81,7 @@
 - Using Rails private APIs
   - No deprecations for using private APIs
 
-## Things to remember
+### Things to remember
 
 - Pay down debt down incrementally
 - Remove monkey patches
@@ -68,7 +89,7 @@
   - Find others for support (Like GitHub asking Shopify)
 - Upgrades are worth it
 
-## Benefits
+### Benefits
 
 - Improved APIs
 - Improves security
@@ -80,7 +101,7 @@
 - Chance to contribute upstream
   - Difficult to fix bugs when you are on an old version
 
-## Future for GitHub
+### Future for GitHub
 
 - GitHub can now contribute features upstream to Rails
 - 75+ PR's from GitHub to Rails 6
@@ -90,9 +111,9 @@
 - Helps keep app focused on product
 - Have responsibility to support Rails
 
-## Multiple Rails Versions
+### Multiple Rails Versions
 
-### Gemfile
+#### Gemfile
 
 ```ruby
 # Gemfile.lock (Rails 3.2)
@@ -104,7 +125,7 @@ RAILS4=1 rails server
 RAILS4=1 rails test tests/models/issue_test
 ```
 
-### Features
+#### Features
 
 ```ruby
 if GitHub.rails_3_2?

@@ -1,6 +1,6 @@
-# The Rails 6 Front End: Building with Webpacker and Stimulus
+# The Rails 6 Front End: Building with Webpacker and Stimulus by Noel Rappin
 
-- [The Rails 6 Front End: Building with Webpacker and Stimulus](#the-rails-6-front-end-building-with-webpacker-and-stimulus)
+- [The Rails 6 Front End: Building with Webpacker and Stimulus by Noel Rappin](#the-rails-6-front-end-building-with-webpacker-and-stimulus-by-noel-rappin)
   - [Stimulus](#stimulus)
     - [Controllers](#controllers)
     - [Actions](#actions)

@@ -1,5 +1,14 @@
 # Hacking Verbal Communication Systems
 
+- [Hacking Verbal Communication Systems](#hacking-verbal-communication-systems)
+  - [Contact](#contact)
+  - [Notes](#notes)
+    - [Flow control](#flow-control)
+      - [Race conditions](#race-conditions)
+    - [Consensus Modeling](#consensus-modeling)
+    - [Implementation points](#implementation-points)
+    - [Wrap up](#wrap-up)
+
 ## Contact
 
 - Ryan Alexander

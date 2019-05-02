@@ -1,4 +1,19 @@
-# Database Design for Beginners
+# Database Design for Beginners by David Copeland
+
+- [Database Design for Beginners by David Copeland](#database-design-for-beginners-by-david-copeland)
+  - [Contact](#contact)
+  - [Thought experiment](#thought-experiment)
+  - [Notes](#notes)
+    - [General](#general)
+    - [What is a database?](#what-is-a-database)
+    - [What facts do we want to record?](#what-facts-do-we-want-to-record)
+    - [How?](#how)
+    - [Primary keys](#primary-keys)
+    - [Physical vs Logical Model](#physical-vs-logical-model)
+      - [Logic to Physical](#logic-to-physical)
+      - [On Types](#on-types)
+    - [General guidance](#general-guidance)
+    - [Closing thoughts](#closing-thoughts)
 
 ## Contact
 
@@ -10,17 +25,19 @@
 1. Your app's source code goes away forever with no backup possible
 2. Your database goes away forever with no backups
 
-## General Notes
+## Notes
+
+### General
 
 - Data > Source Code
 
-## What is a database?
+### What is a database?
 
 - OLTP: online transaction processing
 - An OLTP is the source of truth - it records facts about the world
 - Database design is how we ensure our database is the source of truth
 
-## What facts do we want to record?
+### What facts do we want to record?
 
 - A wrestler may have a finishing move
 - A wrestler might wrestle on a show
@@ -45,14 +62,14 @@
 - A relation can have many keys, but always has at least one
 - This process is called Heath's theorem, which proves we removed anomalies and didn't loose data
 
-## How?
+### How?
 
 - What facts do we want to record
 - Create relations
 - Identify functional dependencies and keys
 - Extract new tables/apply Heath's theorem
 
-## Primary keys
+### Primary keys
 
 - Uniquely identify the row
 - They are called natural keys or sometimes business keys
@@ -60,9 +77,9 @@
 - But what if we rename a show or a wrestler? We have to change the key values everywhere and it is messy
 - To get around this Rails makes the ID field, it is called the synthetic/surrogate key
 
-## Physical vs Logical Model
+### Physical vs Logical Model
 
-### Logic to Physical
+#### Logic to Physical
 
 - The tables ie migrations are the implementation of the design
 - Primary concerns
@@ -73,7 +90,7 @@
 - associations can be enforced with foreign key constraints
 - Types are harder and potentially impossible to get perfect depending on your database
 
-### On Types
+#### On Types
 
 - Tradeoffs
   - How likely is bad data to be input
@@ -83,7 +100,7 @@
 - Rails validations
   - `validates :name, presence: true, uniqueness: { case_sensitive: false }`
 
-## General guidance
+### General guidance
 
 - Create unique indexes for all business keys
 - Use foreign key constraints
@@ -91,7 +108,7 @@
 - Comment nullable fields
 - Use database constraints if the downside of bad data is really bad, otherwise validations
 
-## Closing thoughts
+### Closing thoughts
 
 - Boyce-Codd Normal form does not eliminate all anomalies, but it eliminates many
 - When editing your model, edit your design, then flow through to the physical
