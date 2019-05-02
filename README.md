@@ -16,3 +16,4 @@
 ## Day 3
 
 [New HotN+1ness - Hard lessons migrating from REST to GraphQL](day_3/migrating_from_rest_to_graphql.md)
+[Zeitwerk: A new code loader](day_3/zeitwerk.md)
