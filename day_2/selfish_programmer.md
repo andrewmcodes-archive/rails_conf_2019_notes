@@ -1,6 +1,7 @@
 # Selfish Programmer by Justin Searls
 
 - [Selfish Programmer by Justin Searls](#selfish-programmer-by-justin-searls)
+  - [Video](#video)
   - [Notes](#notes)
     - [General](#general)
     - [Antisocial](#antisocial)
@@ -14,6 +15,10 @@
       - [Untethered](#untethered)
       - [Fickle](#fickle)
       - [Unhelpful](#unhelpful)
+
+## Video
+
+https://vimeo.com/331528433
 
 ## Notes
 

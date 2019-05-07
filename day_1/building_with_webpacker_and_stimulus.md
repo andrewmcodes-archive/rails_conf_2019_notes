@@ -19,6 +19,7 @@
 ## Stimulus
 
 - [workshop snippets](https://gist.github.com/noelrappin/b87ee470f760d2496d2d03a0187a33f3)
+- [my project clone](https://github.com/andrewmcodes/rails_conf_simulus_workshop)
 
 ### Controllers
 
